@@ -14,4 +14,4 @@ Thie project has a ProcessBase FSM defined that consists of a few simple states 
 
 In addition there are two more FSMs that inherit from the ProcessBase FSM. "StatusEnum" is enhancing the available states (inserting them into the existing state tables). "ProcessCommand" essentially redefines the complete FSM.
 
-There are optionsmethods for exporting and importing the configuration along with the states.
+There are methods for exporting and importing the configuration along with the states.
