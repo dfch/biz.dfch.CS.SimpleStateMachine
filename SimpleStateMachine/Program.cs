@@ -29,7 +29,7 @@ namespace SimpleStateMachine
             p3.SetStateMachine(config);
             Console.WriteLine(p3.GetStateMachine());
 
-            // Modulate command state machine from Juliet
+            // Modulate command state machine from Juliet.
             var cmd = new ProcessCommand();
             Console.WriteLine(cmd.GetStateMachine());
             Console.WriteLine("Previous State = " + cmd.PreviousState);
