@@ -281,7 +281,7 @@ namespace SimpleStateMachine
                 return stateMachineSerialised;
             }
         }
-        public virtual bool SetStateMachine(string configuration)
+        public virtual bool SetStateMachine(string configuration, string currentState = null, string previousState = null)
         {
             var fReturn = false;
             var jss = new System.Web.Script.Serialization.JavaScriptSerializer();
@@ -302,6 +302,8 @@ namespace SimpleStateMachine
                     StateSet.Add(targetState);
                     SetStateTransition(sourceState, condition, targetState, true);
                 }
+                if (null != currentState) CurrentState = currentState;
+                if (null != previousState) PreviousState = previousState;
                 fReturn = true;
             }
             return fReturn;
