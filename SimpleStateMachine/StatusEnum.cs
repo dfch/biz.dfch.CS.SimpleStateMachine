@@ -10,8 +10,8 @@ namespace SimpleStateMachine
     {
         public StatusEnum()
         {
-            InsertStateTransition(InitialState, ContinueCondition, WatingState, true);
-            SetStateTransition(WatingState, CancelCondition, CancelledState);
+            InsertStateTransition(InitialState, ContinueCondition, WaitingState, true);
+            SetStateTransition(WaitingState, CancelCondition, CancelledState);
         }
         public override string InitialState
         {
@@ -20,7 +20,7 @@ namespace SimpleStateMachine
                 return "Pending";
             }
         }
-        public string WatingState
+        public string WaitingState
         {
             get
             {
