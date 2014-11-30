@@ -9,8 +9,10 @@ Based on an idea by [Juliet](http://stackoverflow.com/users/40516/juliet) "[Simp
 
 DESCRIPTION
 
-Thie project has a ProcessBase FSM defined that consists of a few simple states and has two conditions ("Continue", "Cancel") that can be used to advance through that state machine.
+Thie project has a ProcessBase FSM defined that consists of a few simple states and has two conditions ("Continue", "Cancel") that can be used to advance (transition) through that state machine.
 
-In addition there are two more FSMs that inherit from the ProcessBase FSM. "StatusEnum" is enhancing the available states (inserting them into the existing state tables). "ProcessCommand" essentially redefines the complete FSM.
+In addition there are two more FSMs as examples that inherit from the ProcessBase FSM.
+* "[StatusEnum](./SimpleStateMachine/StatusEnum.cs)" is enhancing the available states (inserting them into the existing state tables)
+* "[ProcessCommand](./SimpleStateMachine/ProcessCommand.cs)" essentially redefines the complete FSM.
 
 There are methods for exporting and importing the configuration along with the states.
